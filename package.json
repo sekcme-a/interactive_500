@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.2",
+    "@mui/material": "^6.1.2",
+    "framer-motion": "^11.11.1",
+    "next": "14.2.14",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.14"
+    "react-share": "^5.1.0",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "eslint": "^8",

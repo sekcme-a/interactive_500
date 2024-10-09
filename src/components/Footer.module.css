@@ -1,0 +1,57 @@
+
+
+/* .main{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sub{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+} */
+
+.container{
+  /* position: absolute; */
+  width: 100%;
+  margin-top: 80px;
+  padding-top: 20px;
+  border-top: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.back{
+  width: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.thanks{
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Paperlogy-3Light';
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+
+
+@media screen and (min-width: 600px){
+  .container{
+    position: absolute;
+    bottom: 15px;
+  }
+}
+
