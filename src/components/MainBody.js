@@ -5,19 +5,30 @@ import Image from "next/image"
 import styles from "./MainBody.module.css"
 import KeyboardDoubleArrowRightRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowRightRounded';
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useRouter } from "next/navigation";
 
-const MainBody = ({ images, text, tags }) => {
+const MainBody = ({ images, text, tags, goText }) => {
+  const router = useRouter()
+
+  const onClick = (url) => {
+    if(url.includes("https"))window.open(img.url, '_blank')
+    else router.push("/france/minigame")
+  }
   return (
     <>
         <Swiper
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           spaceBetween={50}
           slidesPerView={1}
           pagination={{
             clickable: true,
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
           }}
           loop={true}
         >
@@ -33,9 +44,9 @@ const MainBody = ({ images, text, tags }) => {
                   />
                   <div
                     className={styles.goto_container}
-                    onClick={() => window.open(img.url, '_blank')}
+                    onClick={()=>onClick(img.url)}
                   >
-                    <p>관련 게시물 바로가기</p>
+                    <p>{goText}</p>
                     <KeyboardDoubleArrowRightRoundedIcon
                       style={{ fontSize: "40px" }}
                     />

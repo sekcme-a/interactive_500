@@ -1,0 +1,55 @@
+
+
+.main{
+  position: relative;
+}
+
+.main h3{
+  margin-top: 10px;
+  font-family: 'Paperlogy-4Regular';
+  font-size: 1.3rem;
+}
+
+.main h4{
+  font-family: 'Paperlogy-4Regular';
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+
+.grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 한 줄에 4장 배치 */
+  gap: 5px; /* 카드 사이의 간격 */
+  row-gap: 10px;
+  width: 100%;
+}
+
+.gameOver {
+  margin-top: 30px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.open_all_button{
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  transition: .3s;
+}
+.open_all_button:hover{
+  background-color: rgb(35, 35, 35);
+  color: white;
+}
+.gameover_container{
+  display: flex;
+  justify-content: flex-end;
+}

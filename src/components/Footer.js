@@ -6,11 +6,11 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
 
-const Footer = () => {
+const Footer = ({noMargin}) => {
 
   return(
     <>
-        <div className={styles.container}>
+        <div className={styles.container} style={noMargin ? {marginTop: "20px" }: {}} >
           <div className={styles.back}>
             <ReplyRoundedIcon 
               style={{color:"white", }}

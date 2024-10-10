@@ -11,6 +11,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import Header from "@/components/header";
 import Share from "./components/share";
 import { useRouter } from "next/navigation";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const router = useRouter()
@@ -84,9 +85,10 @@ export default function Home() {
       </div>
 
 
-      <p className={styles.thanks}>본 기획물은 한국언론진흥재단의 지원을 받아 제작되었습니다.</p>
-      
+      {/* <p className={styles.thanks}>본 기획물은 한국언론진흥재단의 지원을 받아 제작되었습니다.</p>
+       */}
 
+      <Footer noMargin/>
     </div>
   );
 }

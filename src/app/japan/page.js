@@ -12,6 +12,7 @@ const Japan = () => {
       <Header />
 
       <MainBody
+      goText="관련 기사 바로가기"
         images={[
           {image: "/japan.jpg", url: "https://www.kmcn.kr/news/article.html?no=6761"}
         ]}
