@@ -32,12 +32,12 @@ export default function Home() {
           objectFit="cover"
         />
         <div className={styles.buttons_container}>
-          <div className={styles.button}>
+          <div className={styles.button} onClick={(e)=>{ e.stopPropagation(); router.push("/comment")}}>
             <ChatOutlinedIcon
               style={{ color: "rgb(150,150,150)", fontSize: "18px" }}
             />
           </div>
-          <div className={styles.button}>
+          <div className={styles.button} onClick={(e)=>{e.stopPropagation(); router.push("/credit")}}>
             <PersonIcon
               style={{ color: "rgb(150,150,150)", fontSize: "22px" }}
             />

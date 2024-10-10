@@ -52,6 +52,7 @@
 }
 .lang p{
  margin-right: 15px;
+ cursor: pointer;
 }
 .selected{
   font-family: 'Paperlogy-5Medium';

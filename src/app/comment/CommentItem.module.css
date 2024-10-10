@@ -1,0 +1,39 @@
+
+
+.main{
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.img{
+  width: 50px;
+  min-width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid black;
+  position: relative;
+}
+
+.text{
+  flex: 1;
+  line-height: 1.2;
+  font-family: 'Paperlogy-4Regular', sans-serif;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  word-break: keep-all;
+}
+
+.text strong{
+  font-family:  'Paperlogy-8ExtraBold', sans-serif;
+  font-size: 1rem;
+}
+
+
+.createdAt{
+  font-size: .55rem;
+  margin-left: 10px;
+  margin-top: 2px;
+}

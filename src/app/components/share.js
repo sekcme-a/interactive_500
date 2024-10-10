@@ -9,8 +9,8 @@ const Share = () => {
 
   const [shareMessage, setShareMessage] = useState('');
 
-  const onShareClick = async () => {
-    
+  const onShareClick = async (e) => {
+    e.stopPropagation()
     if (typeof navigator !== 'undefined') { // 클라이언트 사이드에서만 실행
       const shareData = {
         title: document.title,

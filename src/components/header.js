@@ -15,7 +15,7 @@ const Header = () => {
   return(
     <div className={styles.header}>
       <ArrowBackIosIcon 
-        style={{fontSize: "20px"}}
+        style={{fontSize: "20px", cursor:"pointer"}}
         onClick={() => router.back()}
       />
       <h1>2024 기획취재</h1>
